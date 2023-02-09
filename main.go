@@ -75,7 +75,7 @@ func (a authCredential) get_key_hash(accountNumber, authMethod) []byte {
 
 // Operations
 type operation interface {
-	perform() transaction
+	perform(string) transaction
 }
 
 type withdraw struct{}
